@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genz Events - Premium Event Management</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "PgdMQzzPzJlYJIum6",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- loading page -->
+    <div class="preloader">
+      <div class="loader"></div>
+      <p>it's Genz Events</p>
+    </div>
+
+    <div class="content">
+      <!-- Navigation -->
+      <nav class="navbar" id="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img
+              src="logo.png"
+              alt=" Logo"
+              style="height: 60px; width: auto; object-fit: contain"
+            />
+            <img
+              src="brand-name.png"
+              alt="Genz Events"
+              style="height: 60px; margin-left: 2px"
+            />
+          </div>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Home Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <!-- Diwali lights background (populated by diwali.js) -->
+        <div class="lights-container">
+          <div class="light-string" id="lights"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Creating Unforgettable <br />
+            <span class="highlight">Moments</span>
+            <p class="hero-subtitle">"You Dream:We Plan:You Celebrate"</p>
+          </h1>
+          <p class="hero-subtitle">
+            Transforming your dreams into extraordinary celebrations with
+            elegance and precision
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Plan Your Event</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Our Work</span>
+              <i class="fas fa-images"></i>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>Events & works</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+            <div class="stat-item">
+              <h3>25+</h3>
+              <p>Team Members & volunteer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              Our <span class="highlight">Specialisation</span>
+            </h2>
+            <p class="section-subtitle">
+              Comprehensive event solutions tailored to your unique vision
+            </p>
+          </div>
+          <div class="services-scroll-wrapper">
+            <div class="services-carousel-container">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-birthday-cake"></i>
+                </div>
+                <h3>Birthday Party Planning</h3>
+                <p class="service-tagline">Crafting joyous celebrations</p>
+                <p>
+                  Create magical birthday celebrations with custom decorations,
+                  themes, and unforgettable experiences
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Custom Theme Design
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Venue Decoration</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Entertainment &
+                    Activities
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Catering Coordination
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3>Anniversaries & Reunions</h3>
+                <p class="service-tagline">
+                  Celebrating milestones, creating memories
+                </p>
+                <p>
+                  Celebrate milestones and reconnect with loved ones through
+                  beautifully orchestrated gatherings
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Elegant Venue Setup
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Personalized Decor
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Photography &
+                    Videography
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Guest Management</li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-gift"></i>
+                </div>
+                <h3>Surprise Parties</h3>
+                <p class="service-tagline">
+                  Unforgettable moments, perfectly planned
+                </p>
+                <p>
+                  Plan unforgettable surprises with meticulous attention to
+                  detail and outdoor setups
+                </p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check-circle"></i> Discreet Planning</li>
+                  <li><i class="fas fa-check-circle"></i> Creative Concepts</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Outdoor & Indoor Setups
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Flawless Execution
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-camera"></i>
+                </div>
+                <h3>Personal Shoots</h3>
+                <p class="service-tagline">
+                  Capturing your essence, beautifully
+                </p>
+                <p>
+                  Professional photography sessions capturing your special
+                  moments with artistic excellence
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Professional Photography
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Concept Development
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Location Scouting</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> High-Quality Edits
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Brand & Page Management</h3>
+                <p class="service-tagline">Elevating your brand's presence</p>
+                <p>
+                  Strategic brand shoots and social media management to elevate
+                  your presence
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Strategic Brand Shoots
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Social Media Content
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Engagement Strategies
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Online Presence
+                    Enhancement
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Event Management</h3>
+                <p class="service-tagline">
+                  Seamless events, exceptional results
+                </p>
+                <p>
+                  Complete event and competition planning with dedicated
+                  volunteer teams
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Full Event Coordination
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Dedicated Volunteer
+                    Teams
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Logistics & Operations
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Post-Event Analysis
+                  </li>
+                </ul>
+              </div>
+              <!-- Duplicated for infinite scroll -->
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-birthday-cake"></i>
+                </div>
+                <h3>Birthday Party Planning</h3>
+                <p class="service-tagline">Crafting joyous celebrations</p>
+                <p>
+                  Create magical birthday celebrations with custom decorations,
+                  themes, and unforgettable experiences
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Custom Theme Design
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Venue Decoration</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Entertainment &
+                    Activities
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Catering Coordination
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3>Anniversaries & Reunions</h3>
+                <p class="service-tagline">
+                  Celebrating milestones, creating memories
+                </p>
+                <p>
+                  Celebrate milestones and reconnect with loved ones through
+                  beautifully orchestrated gatherings
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Elegant Venue Setup
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Personalized Decor
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Photography &
+                    Videography
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Guest Management</li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-gift"></i>
+                </div>
+                <h3>Surprise Parties</h3>
+                <p class="service-tagline">
+                  Unforgettable moments, perfectly planned
+                </p>
+                <p>
+                  Plan unforgettable surprises with meticulous attention to
+                  detail and outdoor setups
+                </p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check-circle"></i> Discreet Planning</li>
+                  <li><i class="fas fa-check-circle"></i> Creative Concepts</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Outdoor & Indoor Setups
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Flawless Execution
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-camera"></i>
+                </div>
+                <h3>Personal Shoots</h3>
+                <p class="service-tagline">
+                  Capturing your essence, beautifully
+                </p>
+                <p>
+                  Professional photography sessions capturing your special
+                  moments with artistic excellence
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Professional Photography
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Concept Development
+                  </li>
+                  <li><i class="fas fa-check-circle"></i> Location Scouting</li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> High-Quality Edits
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Brand & Page Management</h3>
+                <p class="service-tagline">Elevating your brand's presence</p>
+                <p>
+                  Strategic brand shoots and social media management to elevate
+                  your presence
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Strategic Brand Shoots
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Social Media Content
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Engagement Strategies
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Online Presence
+                    Enhancement
+                  </li>
+                </ul>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Event Management</h3>
+                <p class="service-tagline">
+                  Seamless events, exceptional results
+                </p>
+                <p>
+                  Complete event and competition planning with dedicated
+                  volunteer teams
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check-circle"></i> Full Event Coordination
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Dedicated Volunteer
+                    Teams
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Logistics & Operations
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i> Post-Event Analysis
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              Event <span class="highlight">Showcase</span>
+            </h2>
+            <p class="section-subtitle">
+              A glimpse into our most memorable celebrations
+            </p>
+          </div>
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">
+              All Events
+            </button>
+            <button class="filter-btn" data-filter="birthday">Birthdays</button>
+            <button class="filter-btn" data-filter="anniversary">
+              Anniversaries
+            </button>
+            <button class="filter-btn" data-filter="corporate">
+              Corporate
+            </button>
+            <button class="filter-btn" data-filter="surprise">Surprises</button>
+            <button class="filter-btn" data-filter="shoot">Shoots</button>
+            <button class="filter-btn" data-filter="event">Events</button>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card" data-category="birthday">
+              <img
+                src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop"
+                alt="Magical Birthday Celebration"
+              />
+              <div class="project-overlay">
+                <h3>Magical Birthday Celebration</h3>
+                <p>Themed party with custom decorations</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="anniversary">
+              <img
+                src="https://images.unsplash.com/photo-1523438097201-512ae7d59c44?q=80&w=1974&auto=format&fit=crop"
+                alt="Elegant Wedding Ceremony"
+              />
+              <div class="project-overlay">
+                <h3>Elegant Wedding Ceremony</h3>
+                <p>Luxury outdoor wedding setup</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="event">
+              <img
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+                alt="Corporate Launch Event"
+              />
+              <div class="project-overlay">
+                <h3>Corporate Launch Event</h3>
+                <p>Professional brand activation</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="anniversary">
+              <img
+                src="https://images.unsplash.com/photo-1511285560921-4c9a962c2d25?q=80&w=2070&auto=format&fit=crop"
+                alt="Surprise Anniversary Party"
+              />
+              <div class="project-overlay">
+                <h3>Surprise Anniversary Party</h3>
+                <p>Intimate outdoor celebration</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="birthday">
+              <img
+                src="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1974&auto=format&fit=crop"
+                alt="Grand Birthday Bash"
+              />
+              <div class="project-overlay">
+                <h3>Grand Birthday Bash</h3>
+                <p>Luxurious venue decoration</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="event">
+              <img
+                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=2070&auto=format&fit=crop"
+                alt="Product Launch Party"
+              />
+              <div class="project-overlay">
+                <h3>Product Launch Party</h3>
+                <p>Modern brand showcase</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="shoot">
+              <img
+                src="https://images.unsplash.com/photo-1519741497674-6114d186b25c?q=80&w=2070&auto=format&fit=crop"
+                alt="Romantic Beach Wedding"
+              />
+              <div class="project-overlay">
+                <h3>Romantic Beach Wedding</h3>
+                <p>Sunset ceremony with floral arrangements</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="surprise">
+              <img
+                src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=2070&auto=format&fit=crop"
+                alt="Rooftop Surprise Proposal"
+              />
+              <div class="project-overlay">
+                <h3>Rooftop Surprise Proposal</h3>
+                <p>An unforgettable moment under the stars</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="birthday">
+              <img
+                src="https://images.unsplash.com/photo-1587271644521-8d1b4e27559c?q=80&w=1974&auto=format&fit=crop"
+                alt="Kids Themed Party"
+              />
+              <div class="project-overlay">
+                <h3>Kids Themed Party</h3>
+                <p>A fun-filled superhero adventure</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="anniversary">
+              <img
+                src="https://images.unsplash.com/photo-1597158269292-013b64a77b4b?q=80&w=1964&auto=format&fit=crop"
+                alt="Intimate Garden Wedding"
+              />
+              <div class="project-overlay">
+                <h3>Intimate Garden Wedding</h3>
+                <p>A beautiful and personal ceremony</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="corporate">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2130&auto=format&fit=crop"
+                alt="Annual Corporate Gala"
+              />
+              <div class="project-overlay">
+                <h3>Annual Corporate Gala</h3>
+                <p>Celebrating a year of success</p>
+              </div>
+            </div>
+            <div class="project-card" data-category="surprise">
+              <img
+                src="https://images.unsplash.com/photo-1604125399939-0945492f444f?q=80&w=1974&auto=format&fit=crop"
+                alt="Graduation Surprise"
+              />
+              <div class="project-overlay">
+                <h3>Graduation Surprise</h3>
+                <p>A well-deserved celebration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 class="section-title">
+                About <span class="highlight">Genz Events</span>
+              </h2>
+              <p class="about-description">
+                We are a passionate team of event management young professionals
+                dedicated to creating extraordinary experiences. With modern
+                ideas and keen eye for detail, we transform your vision into
+                reality.
+              </p>
+              <p class="about-description">
+                From intimate gatherings to grand celebrations, we handle every
+                aspect with precision and creativity. Our commitment to
+                excellence and personalized service sets us apart in the
+                industry.
+              </p>
+              <div class="about-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Professional Team</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Creative Design</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Timely Execution</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Budget Friendly</span>
+                </div>
+              </div>
+              <div class="about-cta">
+                <a href="#contact" class="btn btn-primary">
+                  <span>Let's Work Together</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="about-visual">
+              <div class="visual-card card-1">
+                <i class="fas fa-users"></i>
+                <h4>Expert Team</h4>
+                <p>Skilled professionals</p>
+              </div>
+              <div class="visual-card card-2">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Creative Solutions</h4>
+                <p>Innovative ideas</p>
+              </div>
+              <div class="visual-card card-3">
+                <i class="fas fa-clock"></i>
+                <h4>On-Time Execution</h4>
+                <p>Perfect works</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              Plan Your <span class="highlight">Event</span>
+            </h2>
+            <p class="section-subtitle">
+              Share your vision with us and let's create something extraordinary
+              together
+            </p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-form-container">
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="name">Your Name *</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="phone">Phone Number *</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder=" "
+                      required
+                    />
+                    <label for="email">Email Address *</label>
+                  </div>
+                  <div class="form-group">
+                    <select id="event-type" name="event-type" required>
+                      <option value=""></option>
+                      <option value="birthday">Birthday Party</option>
+                      <option value="anniversary">Anniversary</option>
+                      <option value="corporate">Corporate Event</option>
+                      <option value="surprise">Surprise Party</option>
+                      <option value="shoot">Personal/Brand Shoot</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <label for="event-type">Event Type *</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="date" id="date" name="date" placeholder=" " />
+                  <label for="date">Preferred Date</label>
+                </div>
+                <!-- <div class="form-group">
+                  <input
+                    type="number"
+                    id="guests"
+                    name="guests"
+                    placeholder=" "
+                  />
+                  <label for="guests">Expected Guests</label>
+                </div> -->
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder=" "
+                  ></textarea>
+                  <label for="message">Tell Us About Your Event *</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span>Call Request</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about">
+              <div class="footer-logo-container">
+                <img
+                  src="logo.png"
+                  alt="Genz Events Logo"
+                  class="footer-logo"
+                />
+                <img
+                  src="brand-name.png"
+                  alt="Genz Events"
+                  class="footer-brand-name"
+                />
+              </div>
+              <p>
+                Crafting unforgettable moments with creativity and precision.
+                Your dream event is our passion.
+              </p>
+            </div>
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Showcase</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Get in Touch</h4>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Rourkela, Odisha, India
+              </p>
+              <p class="footer-social">
+                <i class="fab fa-instagram"></i>
+                <a
+                  href="https://www.instagram.com/genz.eventsz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Genz Events. All rights reserved.</p>
+            <a
+              style="text-decoration: none; color: rgb(0, 206, 0)"
+              href="https://www.instagram.com/c.ode.r/?utm_source=ig_web_button_share_sheet"
+              >Designed with <i class="fas fa-heart"></i> by @c.ode.r</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="light.js"></script>
+  </body>
+</html>
